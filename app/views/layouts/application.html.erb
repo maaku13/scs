@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scs</title>
+    <title>Social Connect Solutions App</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <h1>Social Connect Solutions App</h1>
+
+    <%= link_to 'Blogs', blogs_path %> |
+    <%= link_to 'Posts', posts_path %>
+
     <%= yield %>
   </body>
 </html>
