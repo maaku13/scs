@@ -14,6 +14,14 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use sprockets
+gem 'sprockets-rails' 
+# Use Bootstrap SASS
+gem 'bootstrap-sass', '~> 3.3.6'
+# Use Bootswatch
+gem 'bootswatch-rails', '3.3.4'
+# Use JQuery
+gem 'jquery-rails', '4.2.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
