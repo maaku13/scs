@@ -25,9 +25,9 @@
 
           <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
-              <li><%= link_to "Home", controller: "welcome", action: "index" %></li>
-              <li><%= link_to 'Blogs', blogs_path %></li>
-              <li><%= link_to 'Posts', posts_path %></li>
+              <li <% if request.original_fullpath == '/' %>class="active"<% end %>><%= link_to "Home", controller: "welcome", action: "index" %></li>
+              <li <% if request.original_fullpath.scan(/blogs/i).length == 1 %>class="active"<% end %>><%= link_to 'Blogs', blogs_path %></li>
+              <li <% if request.original_fullpath.scan(/posts/i).length == 1 %>class="active"<% end %>><%= link_to 'Posts', posts_path %></li>
             </ul>
           </div>
         </div>
