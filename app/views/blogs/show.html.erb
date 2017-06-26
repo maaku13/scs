@@ -1,4 +1,12 @@
-<p id="notice"><%= notice %></p>
+<br><br>
+<% if notice %>
+<p id="notice">
+<div class="alert alert-dismissible alert-warning">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <%= notice %>
+</div>
+</p>
+<% end %>
 
 <p>
   <strong>Name:</strong>
@@ -10,5 +18,5 @@
   <%= @blog.counter %>
 </p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<%= link_to 'Back', blogs_path, class:"btn btn-default btn-sm" %>
+<%= link_to 'Edit', edit_blog_path(@blog), class:"btn btn-primary btn-sm" %>
