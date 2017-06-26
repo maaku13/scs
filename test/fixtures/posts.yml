@@ -2,6 +2,10 @@
 
 one:
   name: MyString
+  title: MyString
+  body: MyText
 
 two:
   name: MyString
+  title: MyString
+  body: MyText
